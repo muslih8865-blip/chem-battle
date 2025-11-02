@@ -1,0 +1,10 @@
+body { font-family: Arial; background:#f2f2f2; text-align:center; direction:rtl; }
+.container { max-width:600px; margin:30px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.2);}
+.hidden { display:none; }
+button { padding:10px 20px; margin:10px; font-size:16px; cursor:pointer; border:none; border-radius:5px; background-color:#4CAF50; color:white;}
+button:hover { background-color:#45a049; }
+#question { font-size:20px; margin-bottom:20px; }
+#answers button { display:block; width:100%; margin-bottom:10px; }
+#score-time { font-weight:bold; margin-top:20px; display:flex; justify-content:space-between;}
+#leaderboard-container { margin-top:30px;}
+#leaderboard { list-style:none; padding:0;}

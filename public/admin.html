@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إدارة أسئلة ChemBattle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>لوحة إدارة الأسئلة</h1>
+
+<div>
+<h2>إضافة سؤال جديد</h2>
+<label>المستوى:</label>
+<select id="add-level">
+<option value="beginner">مبتدئ</option>
+<option value="intermediate">متوسط</option>
+<option value="advanced">متقدم</option>
+</select><br>
+<label>السؤال:</label>
+<input type="text" id="add-question"><br>
+<label>الإجابات (افصلها بفواصل):</label>
+<input type="text" id="add-answers"><br>
+<label>الإجابة الصحيحة:</label>
+<input type="text" id="add-correct"><br>
+<button id="add-btn">إضافة سؤال</button>
+</div>
+
+<div>
+<h2>الأسئلة الحالية</h2>
+<select id="select-level">
+<option value="beginner">مبتدئ</option>
+<option value="intermediate">متوسط</option>
+<option value="advanced">متقدم</option>
+</select>
+<ul id="questions-list"></ul>
+</div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

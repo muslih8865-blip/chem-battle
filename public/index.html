@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChemBattle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>ChemBattle ⚛️</h1>
+
+<div id="start-screen">
+<h2>مرحباً بك في لعبة الكيمياء!</h2>
+<label for="level-select">اختر مستوى الصعوبة:</label>
+<select id="level-select">
+<option value="beginner">مبتدئ</option>
+<option value="intermediate">متوسط</option>
+<option value="advanced">متقدم</option>
+</select>
+<button id="start-btn">ابدأ اللعب</button>
+</div>
+
+<div id="quiz-screen" class="hidden">
+<div id="question-container">
+<div id="question">السؤال هنا</div>
+<div id="answers"></div>
+</div>
+<div id="score-time">
+<span id="score">النقاط: 0</span>
+<span id="timer">الوقت: 15s</span>
+</div>
+</div>
+
+<div id="result-screen" class="hidden">
+<h2>انتهت اللعبة!</h2>
+<p id="final-score">نقاطك: 0</p>
+<button id="restart-btn">اللعب مرة أخرى</button>
+</div>
+
+<div id="leaderboard-container">
+<h2>الترتيب العالمي 🏆</h2>
+<ul id="leaderboard"></ul>
+</div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
